@@ -1,0 +1,56 @@
+/*------------
+    RESET
+------------*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/*------------
+    LAYOUT
+------------*/
+
+.row {
+    display: flex;
+}
+
+.container {
+    max-width: 100px;
+}
+
+
+/*------------
+COLOR AND TYPOGRAPHY
+------------*/
+
+.bg-aside {
+    background-color: black ;
+}
+
+/*------------
+    UTILITY
+------------*/
+
+.display-f {
+    display: flex;
+}
+
+.f-column {
+    flex-direction: column;
+}
+
+.total-h {
+    height: 100vh;
+}
