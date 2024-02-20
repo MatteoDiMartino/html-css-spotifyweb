@@ -26,11 +26,30 @@ button {
     display: flex;
 }
 
-.container {
-    max-width: 100px;
+header {
+    width: 90px;
+    background-color: aquamarine;   
 }
 
+/* .debug {
+    border: 4px dashed black;
+} */
 
+.container {
+    height: calc(100vh - 90px);
+}
+
+footer {
+    width: 100%;
+    background-color: blue;
+    height: 90px;
+}
+
+main {
+    background-color: aqua;
+    width: 100%;
+    overflow-y: auto;
+}
 /*------------
 COLOR AND TYPOGRAPHY
 ------------*/
@@ -49,8 +68,4 @@ COLOR AND TYPOGRAPHY
 
 .f-column {
     flex-direction: column;
-}
-
-.total-h {
-    height: 100vh;
 }
