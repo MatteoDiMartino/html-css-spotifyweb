@@ -69,3 +69,13 @@ COLOR AND TYPOGRAPHY
 .f-column {
     flex-direction: column;
 }
+
+
+/*------------
+    ELEMENT
+------------*/
+
+.logo {
+    background-color: red;
+    padding: 10px 10px 10px 5px;
+}
