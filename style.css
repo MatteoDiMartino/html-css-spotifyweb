@@ -27,7 +27,7 @@ button {
 }
 
 header {
-    width: 180px;
+    width: 190px;
     background-color: aquamarine;   
     display: flex;
     flex-direction: column;
@@ -43,6 +43,15 @@ header {
     height: calc(100vh - 90px);
 }
 
+.containerbtn {
+    padding: 15px 15px 15px 0px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.container-nav {
+    padding: 25px 0px;
+}
+
 footer {
     width: 100%;
     background-color: blue;
@@ -52,7 +61,7 @@ footer {
 }
 
 main {
-    background-color: aqua;
+    background-color: #141922;
     width: 100%;
     overflow-y: auto;
 }
@@ -83,6 +92,7 @@ main {
 
 .col16 {
     width: calc(100% / 6);
+    padding: 0 10px;
 }
 /*------------
 COLOR AND TYPOGRAPHY
@@ -104,6 +114,10 @@ body {
     color: black;
 }
 
+.txt-gray {
+    color: #7a7d81;
+}
+
 .bg-black {
     background-color: black;
 }
@@ -123,7 +137,17 @@ body {
     flex-direction: column;
 }
 
+.gap-col {
+    gap: 15px;
+}
 
+.heading-lastsong {
+    padding: 30px 10px;
+}
+
+.display-b {
+    display: block;
+}
 /*------------
     ELEMENT
 ------------*/
@@ -172,4 +196,13 @@ body {
 .align-btn-upgrade {
     display: flex;
     justify-content: end;
+}
+
+.text-album {
+    text-align: center;
+    padding: 5px 0px;
+}
+
+.heading-general {
+    padding-bottom: 5px;
 }
