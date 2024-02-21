@@ -27,12 +27,13 @@ button {
 }
 
 header {
-    width: 190px;
-    background-color: aquamarine;   
+    width: 235px;
+    background-color: rgb(0, 0, 0);   
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
+    color: white;
 }
 
 /* .debug {
@@ -51,6 +52,7 @@ header {
 .container-nav {
     padding: 25px 0px;
 }
+
 
 footer {
     width: 100%;
@@ -152,32 +154,78 @@ body {
     ELEMENT
 ------------*/
 
-.logo {
-    background-color: red;
-    padding: 10px 10px 10px 5px;
+a {
+    text-decoration: none;
 }
 
-.home {
-    background-color: yellow;
+a li {
+    color: white;
+}
+
+.logo {
+    padding: 15px 30px 20px 20px;
+}
+
+.home li {
+    padding-bottom: 6px;
+}
+
+.home span {
+    display: flex;
+    padding-left: 5px ;
+}
+
+.home button {
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.home img {
+    width: 15%;
 }
 
 .playlist-nav {
-    background-color: brown;
+    color: white;
+    padding-left: 20px;
+    padding-top: 10px;
+
 }
 
 .add-playlist {
     display: flex;
+    color: white;
+
 }
 
 .add-playlist > i {
     padding: 3px;
+    color: white;
+
 }
 
 .playlist {
-    background-color: blueviolet;
     overflow-y: auto;
     height: 100%;
+    color: white;
+    padding-left: 20px;
 }
+
+.playlist ul {
+    padding-top: 20px;
+    list-style: none;
+}
+
+.playlist li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.playlist a {
+    color: white;
+}
+
 
 .install {
     display: flex;
@@ -205,4 +253,20 @@ body {
 
 .heading-general {
     padding-bottom: 5px;
+}
+
+.add-playlist i {
+    width: 30px;
+    height: 30px;
+    background-color: #7a7d81;
+    margin-right: 10px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-playlist {
+    display: flex;
+    align-items: center;
 }
