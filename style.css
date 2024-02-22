@@ -84,6 +84,7 @@ main {
     font-size: 15px;
     font-weight: 600;
     border-bottom: 3px solid transparent;
+    margin: 0 10px;
 }
 
 .nav-main li:hover {
