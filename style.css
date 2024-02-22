@@ -24,6 +24,7 @@ button {
 
 .row {
     display: flex;
+    flex-wrap: wrap;
 }
 
 header {
@@ -45,8 +46,10 @@ header {
 }
 
 .containerbtn {
-    padding: 15px 15px 15px 0px;
+    padding: 15px 15px 55px 0px;
     background: rgba(0, 0, 0, 0.5);
+    position: relative;
+
 }
 
 .container-nav {
@@ -79,7 +82,17 @@ main {
 }
 
 .nav-main li {
+    font-size: 15px;
     font-weight: 600;
+    border-bottom: 3px solid transparent;
+}
+
+.nav-main li:hover {
+    color: white;
+    border-bottom: 3px solid #adff2f;
+    transition: 0.5s;
+    transition-property: border;
+    transition-timing-function: ease-in-out;
 }
 
 .block1 {
@@ -127,6 +140,24 @@ body {
 .bg-white {
     background-color: white;
 }
+
+.home img:hover, button:hover {
+    color: white;
+    filter: brightness(100);
+}
+
+.btn-home:hover {
+    border-left: 3px  solid #adff2f;
+
+}
+
+.btn-home {
+    border-left: 3px solid transparent;
+
+}
+button img:hover {
+    filter: white;
+}
 /*------------
     UTILITY
 ------------*/
@@ -139,31 +170,64 @@ body {
     flex-direction: column;
 }
 
-.gap-col {
-    gap: 15px;
-}
-
 .heading-lastsong {
-    padding: 30px 10px;
+    padding: 30px 25px;
 }
 
 .display-b {
     display: block;
 }
+
+.pd-col {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 /*------------
     ELEMENT
 ------------*/
+/* .album img {
+    border-radius: 5px;
+} */
+
+.album {
+    position: relative;
+}
+
+.album:hover .play {
+    opacity: 1;
+
+
+}
+
+.play {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    font-size: 40px;
+    margin-bottom: 4px;
+    opacity: 0;
+    transition: 0.5s opacity;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
 
 a {
     text-decoration: none;
 }
 
 a li {
-    color: white;
+    color: #7a7d81;
 }
 
 .logo {
-    padding: 15px 30px 20px 20px;
+    padding: 15px 30px 20px 23px;
 }
 
 .home li {
@@ -176,7 +240,7 @@ a li {
 }
 
 .home button {
-    color: white;
+    color: #7a7d81;
     display: flex;
     align-items: center;
     padding-left: 20px;
@@ -186,30 +250,48 @@ a li {
     width: 15%;
 }
 
-.playlist-nav {
-    color: white;
-    padding-left: 20px;
-    padding-top: 10px;
+.btn-home > img {
+}
 
+.playlist-nav {
+    color: #7a7d81;
+    padding-left: 23px;
+    padding-top: 10px;
+    border-left: 3px solid transparent;
+}
+
+.playlist-nav h5 {
+    padding-bottom: 3px;
+}
+
+.add-playlist:hover {
+    color: white;
+}
+
+.add-playlist i:hover {
+    background-color: white;
+    cursor: pointer;
+    color: black;
 }
 
 .add-playlist {
-    display: flex;
-    color: white;
+    display: inline-block;
+    color: #7a7d81;
 
 }
 
 .add-playlist > i {
     padding: 3px;
-    color: white;
-
+    color: rgb(0, 0, 0);
+    font-size: 15px;
 }
+
 
 .playlist {
     overflow-y: auto;
     height: 100%;
-    color: white;
-    padding-left: 20px;
+    color: #7a7d81;
+    padding-left: 23px;
 }
 
 .playlist ul {
@@ -223,10 +305,12 @@ a li {
 }
 
 .playlist a {
-    color: white;
+    color: #7a7d81;
 }
 
-
+.playlist a:hover{
+    color: white;
+}
 .install {
     display: flex;
     flex-direction: column;
@@ -235,10 +319,21 @@ a li {
 }
 
 .btn-upgrade {
-    border: 2px solid white;
-    padding: 10px 30px;
+    border: 2px solid #ffffff;
+    padding: 8px 28px;
     border-radius: 20px;
     font-size: 13px;
+    position: absolute;
+}
+
+.btn-upgrade:hover {
+    border-color: white;
+    padding: 11px 31px;
+    transition: 0.5s;
+}
+
+.btn-upgrade button {
+    font-weight: 600;
 }
 
 .align-btn-upgrade {
@@ -249,10 +344,6 @@ a li {
 .text-album {
     text-align: center;
     padding: 5px 0px;
-}
-
-.heading-general {
-    padding-bottom: 5px;
 }
 
 .add-playlist i {
@@ -269,4 +360,46 @@ a li {
 .add-playlist {
     display: flex;
     align-items: center;
+}
+
+/*------------
+  RESPONSIVE
+------------*/
+
+@media screen and (max-width:1100px) {
+    .col16 {
+        width: calc(100% / 4);
+    }
+}
+
+@media screen and (max-width:700px) {
+    .col16 {
+        width: calc(100% / 2);
+    }
+}
+
+@media screen and (max-width:600px) {
+    .col16 {
+        width: calc(100% / 2);
+    }
+
+    header {
+        width: 50px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .home {
+        display: none;
+    }
+
+    .playlist {
+        display: none;
+    }
+
+    .playlist-nav {
+        display: none;
+    }
 }
