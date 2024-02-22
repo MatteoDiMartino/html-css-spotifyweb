@@ -196,6 +196,11 @@ button img:hover {
     border-radius: 5px;
 } */
 
+.pg-singer img {
+    border-radius: 100%;
+    overflow-y: hidden;
+}
+
 .j-doe-align {
     display: flex;
     padding-top: 10px;
@@ -223,6 +228,15 @@ button img:hover {
     overflow-y: hidden;
 }
 
+.pg-singer {
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.pg-singer i {
+    color: white;
+}
+
 .album {
     position: relative;
 }
@@ -246,7 +260,7 @@ button img:hover {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-
+    z-index: 1;
 }
 
 a {
