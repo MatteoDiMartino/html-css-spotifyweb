@@ -77,7 +77,6 @@ main {
 
 .nav-main ul {
     display: flex;
-    gap: 15px;
     list-style: none;
 }
 
@@ -103,6 +102,7 @@ main {
     height: 20%;
     display: flex;
     align-items: end;
+    background-color: black;
 }
 
 .install {
@@ -195,6 +195,10 @@ button img:hover {
 /* .album img {
     border-radius: 5px;
 } */
+
+.small-logo {
+    display: none;
+}
 
 .pg-singer img {
     border-radius: 100%;
@@ -427,6 +431,18 @@ a li {
     .col16 {
         width: calc(100% / 2);
     }
+
+    .nav-main ul{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-main li {
+        padding-top: 5px;
+        padding-right: 7.5px;
+        padding-left: 7.5px;
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -435,14 +451,30 @@ a li {
     }
 
     header {
-        width: 50px;
+        width: 100px;
     }
 
     .logo {
         display: none;
     }
 
-    .home {
+    .btn-home span {
+        display: none;
+    }
+
+    .small-logo {
+        display: flex;
+        width: 40%;
+        margin-left: 25px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .add-playlist {
+        display: none;
+    }
+    
+    .playlist-nav {
         display: none;
     }
 
@@ -450,7 +482,34 @@ a li {
         display: none;
     }
 
-    .playlist-nav {
+    .btn-home img {
+        width: 30%;
+        margin-left: 11px;
+        padding-top: 10px;
+    }
+
+    .element-download {
+        display: flex;
+        justify-content: center;
+        border: none;
+    }
+
+    .install span:not(:last-child) {
+        border: none;
+    }
+
+
+    .inst-app {
         display: none;
+    }
+
+    .j-doe-align span{
+        display: none;
+    }
+    
+    .j-doe-align {
+        display: flex;
+        justify-content: center;
+        
     }
 }
